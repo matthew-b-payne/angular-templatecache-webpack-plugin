@@ -1,29 +1,26 @@
-# angular-templatecache-webpack-plugin
+# angular-templatecache-webpack5-plugin
 
 [![npm][npm]][npm-url]
 ![npm](https://img.shields.io/npm/dw/angular-templatecache-webpack-plugin.svg)
 [![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://npmjs.org/package/angular-templatecache-webpack-plugin)
 
 > Speed up your AngularJS app by automatically combining, concatenating, registering and caching your AngularJS HTML templates in the `$templateCache`.
+> This is a fork of https://github.com/rafaelmussi/angular-templatecache-webpack-plugin with specific intend of webpack 5 compatiblity. 
 
 [Install](#install) | [Usage](#usage) | [Options and Defaults](#options-and-defaults) | [License](#license)
 
 ----
 
-#### :warning: If you are a **`Laravel` user**, check out this [laravel mix package](https://github.com/rafaelmussi/laravel-mix-angular-templatecache) :warning:
-
-----
-
 ## Install
 
-Install with [npm](https://www.npmjs.com/package/angular-templatecache-webpack-plugin) or [yarn](https://yarnpkg.com/package/angular-templatecache-webpack-plugin)
+Install with [npm](https://www.npmjs.com/package/angular-templatecache-webpack5-plugin) or [yarn](https://yarnpkg.com/package/angular-templatecache-webpack5-plugin)
 
 ```bash
-  npm i --save angular-templatecache-webpack-plugin
+  npm i --save angular-templatecache-webpack5-plugin
 ```
 
 ```bash
-  yarn add angular-templatecache-webpack-plugin
+  yarn add angular-templatecache-webpack5-plugin
 ```
 
 ## Usage

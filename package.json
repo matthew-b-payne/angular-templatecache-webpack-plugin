@@ -1,15 +1,15 @@
 {
-  "name": "angular-templatecache-webpack-plugin",
-  "version": "1.0.1",
+  "name": "angular-templatecache-webpack5-plugin",
+  "version": "1.1.0",
   "license": "MIT",
-  "description": "Webpack plugin that concatenates and registers AngularJS templates in the $templateCache.",
-  "author": "Rafael Mussi (https://github.com/rafaelmussi)",
+  "description": "Webpack5 plugin that concatenates and registers AngularJS templates in the $templateCache.",
+  "author": "Matthew Payne (https://github.com/matthew-b-payne) fork of https://github.com/rafaelmussi/angular-templatecache-webpack-plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "webpack": "^4.44.2"
+    "webpack": "^5.50.1","
   },
   "dependencies": {
     "fs": "0.0.1-security",
@@ -21,7 +21,7 @@
     "schema-utils": "^1.0.0"
   },
   "peerDependencies": {
-    "webpack": "^1.0.0 || ^2.0.0 || ^3.0.0  || ^4.0.0"
+    "webpack": "^5.0.0"
   },
   "keywords": [
     "angular-templatecache-webpack-plugin",
@@ -32,10 +32,11 @@
     "template",
     "template cache",
     "webpack",
+    "webpack5",
     "plugin",
     "cache busting"
   ],
-  "bugs": "https://github.com/rafaelmussi/angular-templatecache-webpack-plugin/issues",
-  "homepage": "https://github.com/rafaelmussi/angular-templatecache-webpack-plugin",
-  "repository": "https://github.com/rafaelmussi/angular-templatecache-webpack-plugin.git"
+  "bugs": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin/issues",
+  "homepage": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin",
+  "repository": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin.git"
 }

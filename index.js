@@ -82,6 +82,8 @@ class AngularTemplateCacheWebpackPlugin {
 
     apply(compiler) {
 
+        const { webpack } = compiler;
+
         compiler.hooks.thisCompilation.tap('AngularTemplateCacheWebpackPlugin', (compilation) => {
             compilation.hooks.additionalAssets.tapAsync('AngularTemplateCacheWebpackPlugin', (callback) => {
                 let cachedTemplates = '';
@@ -91,15 +93,16 @@ class AngularTemplateCacheWebpackPlugin {
                 });
 
                 // Insert this list into the webpack build as a new file asset:
-                compilation.assets[this.options.outputFilename] = {
-                    source: function () {
-                        return cachedTemplates;
-                    },
-                    size: function () {
-                        return cachedTemplates.length;
-                    },
+                // compilation.assets[this.options.outputFilename] = {
+                //     source: function () {
+                //         return cachedTemplates;
+                //     },
+                //     size: function () {
+                //         return cachedTemplates.length;
+                //     },
+                // };
 
-                };
+                compilation.assets[this.options.outputFilename] = new webpack.sources.RawSource(cachedTemplates.toString())
 
                 callback();
             });

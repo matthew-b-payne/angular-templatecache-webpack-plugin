@@ -25,6 +25,7 @@
   },
   "keywords": [
     "angular-templatecache-webpack-plugin",
+    "angular-templatecache-webpack5-plugin",
     "angular",
     "angularjs",
     "angular js",

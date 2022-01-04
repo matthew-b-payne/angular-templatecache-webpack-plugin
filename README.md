@@ -29,7 +29,7 @@ This [webpack](http://webpack.js.org/) plugin will combine all your angular `.ht
 
 **webpack.config.js**
 ```js
-const AngularTemplateCacheWebpackPlugin = require('angular-templatecache-webpack-plugin');
+const AngularTemplateCacheWebpackPlugin = require('angular-templatecache-webpack5-plugin');
 
 module.exports = {
   plugins: [

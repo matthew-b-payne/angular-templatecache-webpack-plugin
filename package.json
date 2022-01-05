@@ -9,11 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "webpack": "^5.50.1",
+    "webpack": "^5.50.1"
   },
   "dependencies": {
     "fs": "0.0.1-security",
-    "glob": "^7.1.6",
+    "glob": "^7.2.0",
     "glob-parent": "^5.1.1",
     "jsesc": "^3.0.2",
     "lodash.template": "^4.5.0",

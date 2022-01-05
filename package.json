@@ -37,7 +37,7 @@
     "plugin",
     "cache busting"
   ],
-  "bugs": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin/issues",
-  "homepage": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin",
-  "repository": "https://github.com/matthew-b-payne/angular-templatecache-webpack-plugin.git"
+  "bugs": "https://github.com/matthew-b-payne/angular-templatecache-webpack5-plugin/issues",
+  "homepage": "https://github.com/matthew-b-payne/angular-templatecache-webpack5-plugin",
+  "repository": "https://github.com/matthew-b-payne/angular-templatecache-webpack5-plugin.git"
 }

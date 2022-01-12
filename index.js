@@ -5,6 +5,7 @@ const jsesc = require("jsesc");
 const globParent = require("glob-parent");
 const validateOptions = require("schema-utils");
 const lodashTemplate = require('lodash.template');
+const minify = require('html-minifier').minify;
 
 const schema = {
     "type": "object",
@@ -162,7 +163,7 @@ class AngularTemplateCacheWebpackPlugin {
 
             tpl.source = lodashTemplate(this.templateBody)({
                 url: url,
-                contents: jsesc(tpl.source.toString('utf8'), this.options.escapeOptions),
+                contents: jsesc(minify(tpl.source.toString('utf8'), {collapseWhitespace: true}), this.options.escapeOptions),
                 file: file
             });
 

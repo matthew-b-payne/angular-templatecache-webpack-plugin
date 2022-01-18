@@ -74,6 +74,7 @@ class AngularTemplateCacheWebpackPlugin {
             templateFooter: userOptions.templateFooter === undefined ? TEMPLATE_FOOTER : userOptions.templateFooter,
             escapeOptions: userOptions.escapeOptions === undefined ? {} : userOptions.escapeOptions,
             standalone: !!userOptions.standalone,
+            minifyOptions: userOptions.minifyOptions === undefined ? {collapseWhitespace: true} : userOptions.minifyOptions,
         };
 
         this.options = Object.assign(defaultOptions, userOptions);

@@ -116,7 +116,7 @@ class AngularTemplateCacheWebpackPlugin {
                 const hashedFilename = this.getContentHash(compiler, compilation, cachedTemplates);
                 const fileName = this.options.outputFilename.replace('[contenthash]', hashedFilename);
 
-                compilation.assets[this.options.outputFilename] = new webpack.sources.RawSource(cachedTemplates.toString())
+                compilation.assets[fileName] = new webpack.sources.RawSource(cachedTemplates.toString())
 
                 callback();
             });
